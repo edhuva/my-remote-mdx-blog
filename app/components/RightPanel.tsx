@@ -20,7 +20,7 @@ export default function RightPanel() {
             Build modern websites with Next.js & Tailwind.
           </p>
           <Link
-            href="#"
+            href="https://nextjs.org/"
             className="inline-block rounded-md bg-black text-white px-4 py-2 text-sm hover:opacity-80 transition"
           >
             Learn More
