@@ -72,7 +72,7 @@ export default function Navbar() {
         </Link>
 
         <div className="flex flex-row justify-center gap-5 text-3xl">
-          <TooltipLink href="https://edwin-portfolio.onrender.com/" label="Portfolio">
+          <TooltipLink href="https://edwin-portfolio-virid.vercel.app/" label="Portfolio">
             <FaBriefcase />
           </TooltipLink>
 

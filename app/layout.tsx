@@ -4,10 +4,31 @@ import Footer from "./components/Footer";
 
 import "./globals.css";
 
-export const metadata: Metadata = {
+// app/layout.js
+export const metadata = {
   title: "Edwin's Blog",
-  description: "Created by Edwin Matema",
-};
+  description: 'modern, performance-focused developer blog ',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'manifest',
+        url: '/site.webmanifest',
+      },
+    ],
+  },
+}
+// export const metadata: Metadata = {
+//   title: "Edwin's Blog",
+//   description: "Created by Edwin Matema",
+// };
 
 export default function RootLayout({
   children,
@@ -28,3 +49,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+// public/site.webmanifest
+// {"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
