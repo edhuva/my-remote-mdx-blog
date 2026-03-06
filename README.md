@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Remote-mdx-Blog
+Remote mdx blog -  with real-world web development tutorials, project showcases, and technical interview problem-solving breakdowns — all explained clearly, practically, and with passion. Whether you're a coding newbie or sharpening your skills for your next big role,
 
-## Getting Started
+### The project currently hosted on Vercel
+Link: [https://my-remote-mdx-blog-ashen.vercel.app/]
+#### This is hosted on Vercel free-tier and may take a few seconds to spin up!
 
-First, run the development server:
+## APP INFO
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Target audience
+Tech newbies, Web Tech developers, 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Author
+Edwin Matema
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Features
+include: blog article posts, Tech trends, latest technews etc
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Resources & Tools include:
+1. MDX files
+2. Git Hub API
+3. Git and GitHub - Code version control, Store and Sharing code
+4. Vercel - App Deployement and Hosting
+5. Neextjs - Fullstack Framework
+7. Nodejs - Javascript Runtime Environment
+8. TypeScript, Javascript, TSX, HTML, CSS - Languages
+9. Chrome, FireFox - Browsers
+12. etc
