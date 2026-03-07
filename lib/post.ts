@@ -4,6 +4,9 @@ import rehypeHighlight from "rehype-highlight"
 import rehypeSlug from "rehype-slug"
 import Video from "@/app/components/Video"
 import CustomImage from "@/app/components/CustomImage"
+import Callout from "@/app/components/Callout"
+import CodeBlock from "@/app/components/CodeBlock"
+import getReadingTime from "./getReadingTime"
 
 type Filetree = {
   tree: {
@@ -31,6 +34,8 @@ export async function getPostByName(
       }
     )
 
+    
+
     // console.log(`API Response Status for ${fileName}:`, res.status)
     
     if (!res.ok) {
@@ -48,16 +53,22 @@ export async function getPostByName(
     // 🔓 Decode base64 MDX file
     const rawMDX = Buffer.from(data.content, "base64").toString("utf-8")
 
+    const readingTime = getReadingTime(rawMDX)
+
     // Rest of your code...
     const { frontmatter, content } = await compileMDX<{
       title: string
       date: string
+      author: string
       tags: string[]
+      readingTime: string
     }>({
       source: rawMDX,
       components: {
         Video,
         CustomImage,
+        Callout,
+        CodeBlock,
       },
       options: {
         parseFrontmatter: true,
@@ -83,7 +94,9 @@ export async function getPostByName(
         id,
         title: frontmatter.title,
         date: frontmatter.date,
+        author: frontmatter.author,
         tags: frontmatter.tags,
+        readingTime
       },
       content,
     }

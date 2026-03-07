@@ -8,14 +8,16 @@ export const revalidate = 86400
 export default function Home() {
   return (
     <div className="mx-auto my-20 pt-8 md:my-16 max-w-6xl px-4">
-      <MyProfilePic />
-
-      <p className="mt-12 mb-12 text-2xl  md:text-3xl text-center dark:text-white">
+      <div className="flex max-w-3xl mx-auto">
+        <p className="mt-12 mb-12 text-2xl  md:text-4xl text-left dark:text-white ">
         Hello and Welcome 👋&nbsp;
         <span className="whitespace-nowrap">
           I'm <span className="font-bold">Edwin</span>
         </span>
       </p>
+
+      <MyProfilePic />
+      </div>
 
       {/* Main Content */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:mx-12">

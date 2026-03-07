@@ -1,7 +1,8 @@
-type Props = { id: string };
+type Props = { id: string, title: string };
 
-export default function Video({ id }: Props) {
+export default function Video({ id, title }: Props) {
   return (
+    <>
     <div className="relative w-full aspect-video my-6">
       <iframe
         src={`https://www.youtube.com/embed/${id}`}
@@ -11,6 +12,18 @@ export default function Video({ id }: Props) {
         allowFullScreen
       />
     </div>
+     {/* <div className="my-8">
+      <div className="aspect-video w-full overflow-hidden rounded-xl border shadow-sm">
+        <iframe
+          src={`https://www.youtube.com/embed/${id}`}
+          title={title || "YouTube video player"}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-full"
+        />
+      </div>
+    </div> */}
+    </>
   );
 }
 

@@ -1,12 +1,13 @@
 import Link from "next/link"
 import getFormattedDate from "@/lib/getFormattedDate"
+import { FaBookOpen } from "react-icons/fa6";
 
 type Props = {
     post: Meta
 }
 
 export default function ListItem({ post }: Props) {
-    const { id, title, date } = post
+    const { id, title, date, readingTime } = post
     const formattedDate = getFormattedDate(date)
 
   return (
@@ -18,9 +19,14 @@ export default function ListItem({ post }: Props) {
       {title}
     </Link>
 
-    <p className="mt-1 text-sm text-black/50 dark:text-white/50">
-      {formattedDate}
-    </p>
+    <div className="flex items-center text-sm text-gray-400 mb-6">
+      <p >
+      {formattedDate} </p>
+      <span className="mx-2"> * </span> 
+      <div className="flex items-center gap-2">
+        <FaBookOpen className="text-blue-500"/> {readingTime}
+      </div>
+    </div>
   </li>
   )
 }
