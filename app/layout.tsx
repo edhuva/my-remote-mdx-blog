@@ -36,9 +36,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className='dark:bg-slate-800'
+        className='dark:bg-slate-800 overflow-x-hidden w-full relative'
       >
         <Navbar />
         <main className="px-4 md:px-6 mx-auto">
